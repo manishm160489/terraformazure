@@ -1,0 +1,6 @@
+resource "azurerm_virtual_network" "newvnet" {
+  name                = "vnet"
+  location            = "West Europe"
+  resource_group_name = "newRG"
+  address_space       = ["10.0.0.0/16"]
+}
